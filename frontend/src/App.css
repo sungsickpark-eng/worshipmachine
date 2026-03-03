@@ -1,0 +1,29 @@
+.App { text-align: center; background-color: #f5f7fa; min-height: 100vh; padding: 20px; font-family: 'Pretendard', sans-serif; }
+.App-header { color: #2c3e50; margin-bottom: 30px; }
+
+/* Form Style */
+.add-song-form { background: white; padding: 20px; border-radius: 12px; max-width: 600px; margin: 0 auto 40px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+.add-song-form form { display: flex; gap: 10px; justify-content: center; }
+.add-song-form input, .add-song-form select { padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+.add-song-form button { padding: 10px 20px; background: #27ae60; color: white; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+
+/* Layout */
+.container { display: flex; gap: 30px; max-width: 1200px; margin: 0 auto; align-items: flex-start; }
+.library { flex: 2; }
+.conti-basket { flex: 1; background: white; padding: 25px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.1); border-top: 5px solid #3498db; position: sticky; top: 20px; }
+
+/* Card Style */
+.card-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 15px; }
+.song-card { background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); cursor: pointer; transition: 0.2s; border: 1px solid #eee; text-align: left; }
+.song-card:hover { transform: translateY(-5px); border-color: #3498db; }
+.song-key { background: #3498db; color: white; padding: 2px 6px; border-radius: 4px; font-weight: bold; margin-right: 8px; }
+.song-title { font-weight: bold; color: #34495e; }
+.tempo-badge { display: inline-block; margin-top: 10px; font-size: 0.75rem; padding: 2px 8px; border-radius: 10px; }
+.fast { background: #fff9db; color: #f08c00; }
+.slow { background: #e9ecef; color: #495057; }
+
+/* Basket Item */
+.conti-item { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee; }
+.order { background: #34495e; color: white; width: 22px; height: 22px; border-radius: 50%; font-size: 0.8rem; display: flex; align-items: center; justify-content: center; margin-right: 10px; }
+.del-btn { background: none; border: none; cursor: pointer; font-size: 1rem; }
+.save-btn { width: 100%; padding: 15px; background: #3498db; color: white; border: none; border-radius: 8px; margin-top: 20px; cursor: pointer; font-weight: bold; }
